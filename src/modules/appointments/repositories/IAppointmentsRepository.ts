@@ -1,4 +1,3 @@
-import IFindAllProvidersDTO from '@modules/users/dtos/IFindAllProvidersDTO';
 import ICreateAppointmentDTO from '../dtos/ICreateAppointmentDTO';
 import IFindAllInDayProviderDTO from '../dtos/IFindAllInDayProviderDTO';
 import IFindAllInMonthProviderDTO from '../dtos/IFindAllInMonthProviderDTO';
