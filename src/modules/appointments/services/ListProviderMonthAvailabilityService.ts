@@ -1,6 +1,4 @@
 /* eslint-disable camelcase */
-
-import User from '@modules/users/infra/typeorm/entities/User';
 import { getDate, getDaysInMonth } from 'date-fns';
 import { inject, injectable } from 'tsyringe';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
@@ -51,7 +49,6 @@ class ListMonthProviderAvailabilityService {
                 available: appointmentsInDay.length < 10,
             };
         });
-        console.log(availability);
 
         return availability;
     }

@@ -1,7 +1,5 @@
 /* eslint-disable camelcase */
-
-import User from '@modules/users/infra/typeorm/entities/User';
-import { getDate, getDaysInMonth, getHours, isAfter } from 'date-fns';
+import { getHours, isAfter } from 'date-fns';
 import { inject, injectable } from 'tsyringe';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 

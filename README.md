@@ -51,19 +51,19 @@
 
 **RF**
 
--   O usuário deve poder listar todos os prestadores de serviços cadastrados;
--   O usuário deve poder listar os dias de um mês com pelo menos um horário disponível de um prestador;
--   O usuário deve poder listar horários disponíveis em um dia espeçifico de um prestador;
--   O usuário deve poder realizar um novo agendamento com um prestador;
+-   [x] O usuário deve poder listar todos os prestadores de serviços cadastrados;
+-   [x] O usuário deve poder listar os dias de um mês com pelo menos um horário disponível de um prestador;
+-   [x] O usuário deve poder listar horários disponíveis em um dia espeçifico de um prestador;
+-   [x] O usuário deve poder realizar um novo agendamento com um prestador;
 
 **RNF**
 
--   A listagem de prestadores deve ser armazenada em cache;
+-   [ ] A listagem de prestadores deve ser armazenada em cache;
 
 **RN**
 
--   Os agendamentos devem esta disponíveis entre 8h e 18h (Primeiro às 8h, último às 17h);
--   O usuário não pode agendar em um horário que já passou;
--   O usuário não pode agendar serviços consigo mesmo;
--   Cada agendamento deve durar 1h exatamente;
--   O usuário não pode adendar em um horário já ocupado;
+-   [x] Os agendamentos devem esta disponíveis entre 8h e 18h (Primeiro às 8h, último às 17h);
+-   [x] O usuário não pode agendar em um horário que já passou;
+-   [x] O usuário não pode agendar serviços consigo mesmo;
+-   [x] Cada agendamento deve durar 1h exatamente;
+-   [x] O usuário não pode adendar em um horário já ocupado;
