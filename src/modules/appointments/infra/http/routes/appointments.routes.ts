@@ -2,6 +2,7 @@
 /* eslint-disable camelcase */
 
 import { Router } from 'express';
+import { celebrate, Joi, Segments } from 'celebrate';
 import ensureAthenticared from '@modules/users/infra/http/middlewares/EnsureAuthenticated';
 import AppointmentsController from '../controllers/AppointmentsController';
 import ProviderAppointmentsController from '../controllers/ProviderAppointmentsControler';
@@ -12,7 +13,16 @@ const providerAppointmentsController = new ProviderAppointmentsController();
 
 appointmentsRouter.use(ensureAthenticared);
 
-appointmentsRouter.post('/', appointmentsController.create);
+appointmentsRouter.post(
+    '/',
+    celebrate({
+        [Segments.BODY]: {
+            provider_id: Joi.string().uuid().required(),
+            date: Joi.date(),
+        },
+    }),
+    appointmentsController.create,
+);
 
 appointmentsRouter.get('/me', providerAppointmentsController.index);
 
