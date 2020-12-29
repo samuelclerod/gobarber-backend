@@ -2,50 +2,50 @@
 
 **RF**
 
--   O usuário deve poder recuperar sua senha informando o seu e-mail;
--   O usuário deve receber um e-mail com instruções de recuperação de senha;
--   O usuário deve poder resetar sua senha;
+-   [x] O usuário deve poder recuperar sua senha informando o seu e-mail;
+-   [x] O usuário deve receber um e-mail com instruções de recuperação de senha;
+-   [x] O usuário deve poder resetar sua senha;
 
 **RNF**
 
--   Utilizar Mailtrap para testar envios em ambiente de desenvolvimento;
--   Utilizar o Amazon SES para envios em produção;
--   O envio de e-mail deve acontecer em segundo plano (background job);
+-   [x] Utilizar Mailtrap para testar envios em ambiente de desenvolvimento;
+-   [ ] Utilizar o Amazon SES para envios em produção;
+-   [ ] O envio de e-mail deve acontecer em segundo plano (background job);
 
 **RN**
 
--   o link enviado por e-mail para resetar senha, deve exporar em 2h;
--   o usuário precisar confirmar a nova senha ao resetar sua senha;
+-   [x] o link enviado por e-mail para resetar senha, deve exporar em 2h;
+-   [x] o usuário precisar confirmar a nova senha ao resetar sua senha;
 
 # Atualização do perfil
 
 **RF**
 
--   O usuário deve poder atualizar o seu perfil;
+-   [x] O usuário deve poder atualizar o seu perfil;
 
 **RN**
 
--   O usuário não pode alterar o seu e-mai para um e-mail já utilizado;
--   Para atualizar sua senha, o usuário deve informar a senha antiga;
--   Pata atualizar sua senha, o usuário precisa confirmar a nova senha;
+-   [x] O usuário não pode alterar o seu e-mai para um e-mail já utilizado;
+-   [x] Para atualizar sua senha, o usuário deve informar a senha antiga;
+-   [x] Pata atualizar sua senha, o usuário precisa confirmar a nova senha;
 
 # Painel do prestador
 
 **RF**
 
--   O usuário deve poder listar seus agendamentos de um dia específico;
--   O prestador deve receber uma notificação sempre que houver um novo agendamento;
--   O prestador deve poder visualizar as notificações não lidas;
+-   [x] O usuário deve poder listar seus agendamentos de um dia específico;
+-   [x] O prestador deve receber uma notificação sempre que houver um novo agendamento;
+-   [ ] O prestador deve poder visualizar as notificações não lidas;
 
 **RNF**
 
--   Os agendamentos do prestador no dia devem ser amazenados em cache;
--   As notificações do prestador devem ser amazzenadas no MongoDB;
--   As notificações do prestador devem ser enviadas em tempo-real utilizando Socket.io;
+-   [ ] Os agendamentos do prestador no dia devem ser amazenados em cache;
+-   [x] As notificações do prestador devem ser amazzenadas no MongoDB;
+-   [ ] As notificações do prestador devem ser enviadas em tempo-real utilizando Socket.io;
 
 **RN**
 
--   A notificação deve ter um status de lida ou não-lida para que o prestador possa controlar
+-   [ ] A notificação deve ter um status de lida ou não-lida para que o prestador possa controlar
 
 # Agendamento de serviços
 
