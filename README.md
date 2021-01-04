@@ -9,7 +9,7 @@
 **RNF**
 
 -   [x] Utilizar Mailtrap para testar envios em ambiente de desenvolvimento;
--   [ ] Utilizar o Amazon SES para envios em produção;
+-   [x] Utilizar o Amazon SES para envios em produção;
 -   [ ] O envio de e-mail deve acontecer em segundo plano (background job);
 
 **RN**
@@ -39,7 +39,7 @@
 
 **RNF**
 
--   [ ] Os agendamentos do prestador no dia devem ser amazenados em cache;
+-   [x] Os agendamentos do prestador no dia devem ser amazenados em cache;
 -   [x] As notificações do prestador devem ser amazzenadas no MongoDB;
 -   [ ] As notificações do prestador devem ser enviadas em tempo-real utilizando Socket.io;
 
@@ -58,7 +58,7 @@
 
 **RNF**
 
--   [ ] A listagem de prestadores deve ser armazenada em cache;
+-   [x] A listagem de prestadores deve ser armazenada em cache;
 
 **RN**
 
